@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Sprint 3 oefenopdrachten</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav class="w3-bar w3-blue">
+        <a href="index.html" class="w3-bar-item w3-button w3-mobile">Introductie</a>
+        <a href="page_2.html" class="w3-bar-item w3-button w3-mobile">Page 2</a>
+        <a href="page_3.html" class="w3-bar-item w3-button w3-mobile">Page 3</a>
+        <a href="page_4.html" class="w3-bar-item w3-button w3-mobile">Page 4</a>
+    </nav>
+    <header class="w3-container">
+        <h1>if-statements</h1>
+        <p class="normal-text">
+            In PART 1 - paragraaf 2.10 heb je gelezen hoe je met if-statements kan werken. In de <code>main</code> branch ben je
+            al begonnen met een cheatsheet te maken voor C# vs JS overzicht. Voeg de werking en code conventie van een if-statement met 
+            een else-if en else toe. Toon hoe dit in C# eruit ziet en in JS. 
+        </p>
+    </header>
+    <main class="w3-container">
+        <section id="start">
+            <h2>Kortere if-statement</h2>
+            <p class="normal-text">
+                Je kan een if-statement ook korter maken met een ? en : oplossing. Neem de volgende if-statement:
+                <pre>
+                    <code>
+                        let studentNumber = prompt('Wat is je studentennummer?', '');
+                        let message = '';
+
+                        if (studentNumber < 20000) {
+                            message = 'Je bent al lang student bij ons';
+                        } else {
+                            message = 'Je bent nog maar net student bij ons';
+                        }
+                        console.log(message);
+                    </code>
+                </pre>
+                Je hebt geleerd dat dit ook korter kan:
+                <pre>
+                    <code>
+                        let studentNumber = prompt('Wat is je studentennummer?', '');
+                        let message = (studentNumber < 20000) ? message = 'Je bent al lang student bij ons' : message = 'Je bent nog maar net student bij ons';
+                        console.log(message);
+                    </code>
+                </pre>
+                Zoals je kan zien ga je van 8 naar 3 regels code. Dit scheelt geheugen, laadtijd en performance. 
+            </p>
+        </section>
+        <section id="between">
+            <h3>Opdracht 1</h3>
+            <div class="w3-panel w3-red hidden">
+                <h3 class="panel-header">Danger!</h3>
+                <p class="panel-message">
+                    Red often indicates a dangerous or negative situation.
+                </p>
+            </div> 
+            <p class="normal-text">
+                <label>Wat is je naam</label>
+                <input class="w3-input userName" type="text">
+            </p>
+            <p>
+                <button class="w3-btn w3-padding w3-teal checkButton">Controleer</button>
+            </p>
+            <p>
+                <section>
+                    <p class="normal-text show-name w3-border w3-border-blue w3-padding">
+                        Vervang deze tekst met de naam van de gebruiker.
+                    </p>
+                </section>
+            </p>
+            <h4>Informatie</h3>
+            <p class="normal-text">
+                Hier boven vind je een klein stukje HTML. Zorg ervoor dat als de gebruiker op de button klikt, dat de ingevoerde
+                naam in het input field in de blauwe tekst komt met border.
+            </p>
+            <p class="normal-text">
+                <h4>Conditites</h4>
+                <ul>
+                    <li>Als de naam <code>Jan</code> is, geef je een foutmelding dat je naam te gewoon is</li>
+                    <li>Als de naam <code>meneer Springer</code> is geef je een melding dat hij de Bom is (ofzo)</li>
+                    <li>Als de naam leeg is, geef je een foutmelding dat dit niet mag</li>
+                </ul>
+                <h4>Conditites Advanced</h4>
+                <ul>
+                    <li>Als de naam leeg is, toon dan een Prompt met ook daar de vraag naar de naam</li>
+                    <li>Maak een extra input veld met de leeftijd van de gebruiker</li>
+                    <li>Als de leeftijd onder de 18 is geef je een alert met "Helaas geen toegang"</li>
+                </ul>
+                <h4>Conditites Expert</h4>
+                <ul>
+                    <li>In de DOM vind je een alert panel, in plaats van de popup toon deze alert</li>>
+                    <li>Zorg ervoor dat de tekst in de header en message van de popup kloppebn</li>
+                    <li><strong>HINT</strong> let goed op de CSS classnames en kijk in de main.css</li>
+                </ul>
+            </p>
+        </section>
+    </main>
+    <footer class="footer" id="final">
+        <section>
+            <a href="index.html">&lt; Vorige opdracht</a> 
+            ||
+            <a href="page_3.html">Volgende opdracht &gt;</a>
+        </section>
+    </footer>   
+    <!-- Hieronder wordt het Javascript bestand ingeladen. Dit doe je bij voorkeur altijd aan het einde van je pagina -->
+    <script src="js/page_2.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Sprint 3 oefenopdrachten</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav class="w3-bar w3-blue">
+        <a href="index.html" class="w3-bar-item w3-button w3-mobile">Introductie</a>
+        <a href="page_2.html" class="w3-bar-item w3-button w3-mobile">Page 2</a>
+        <a href="page_3.html" class="w3-bar-item w3-button w3-mobile">Page 3</a>
+        <a href="page_4.html" class="w3-bar-item w3-button w3-mobile">Page 4</a>
+    </nav>
+    <header class="w3-container">
+        <h1>Arrays II</h1>
+        <p class="normal-text">
+            Als je de vorige opdracht gemaakt hebt zonder Array te gebruiken, probeer hem dan nog eens en maak een 
+            Array aan. 
+        </p>
+    </header>
+    <main class="w3-container">
+        <h3>Opdracht 1</h3>
+        <div class="w3-panel w3-red hidden">
+            <h3 class="panel-header">Danger!</h3>
+            <p class="panel-message">
+                Red often indicates a dangerous or negative situation.
+            </p>
+        </div> 
+        <p class="normal-text">
+            Nu kunnen er nog meer spelers mee doen, per keer kan je maximaal 4 spelers invoeren
+            <ul>
+                <li>Er moeten minimaal 2 namen ingevuld worden, alle namen moeten toegevoegd worden</li>
+                <li>Zorg er voor dat je een Array aanmaakt (variabele) en dat je deze vult</li>
+                <li>Toon het aantal spelers op de juiste plaats</li>
+                <li>Toon alle namen van de spelers op de juiste naam</li>
+                <li>
+                    Zorg ervoor dat telkens nadat er op <code>Toevoegen</code> geklikt wordt, dat de tekst in de input 
+                    velden leeg gemaakt wordt
+                </li>
+                <ul>
+                    <li><strong>Advanced</strong></li>
+                    <li>Maak een while of do-while loop om de namen in de console.log te tonen</li>
+                    <li>Als er 2 spelers zijn verander de kleur van de panel naar w3-blue</li>
+                    <li>Als er 3 spelers zijn verander de kleur van de panel naar w3-teal</li>
+                    <li>Als er 4 spelers zijn verander de kleur van de panel naar w3-yellow</li>
+                    <li>
+                        Maak zelf ook kleuren voor 5 en meer dan 5 spelers - 
+                        <a href="https://www.w3schools.com/w3css/w3css_colors.asp" target="_blank">https://www.w3schools.com/w3css/w3css_colors.asp</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li><strong>Expert</strong></li>
+                    <li>Maak een nieuwe button "annuleer"</li>
+                    <li>Als er op deze button geklikt wordt, wordt de Array leeg gemaakt en alle waarden (aantal spelers en namen) geleegd</li>
+                    <li>Controleer de Array of een naam al voorkomt, als de naam al voorkomt, toon dan een foutmelding (denk aan de alert-pabel)</li>
+                </ul>
+            </ul>
+        </p>
+        <p class="normal-text">
+            <label>Naam speler</label>
+            <input class="w3-input" type="text">
+            <label>Naam speler</label>
+            <input class="w3-input" type="text">
+            <label>Naam speler</label>
+            <input class="w3-input" type="text">
+            <label>Naam speler</label>
+            <input class="w3-input" type="text">
+        </p>
+        <p>
+            <button class="w3-btn w3-padding w3-teal checkButton">Toevoegen</button>
+        </p>
+        <p class="w3-panel w3-padding w3-dark-grey">
+            We starten met: <span class="numberOfPlayers">0</span> spelers.
+            <br><br>
+            <strong>Speler namen</strong>
+            <span></span>
+        </p>
+    </main>
+    <footer class="footer" id="final">
+            <section>
+                <a href="page_3.html">&lt; Vorige opdracht</a> 
+                ||
+                <a class="not-allowed">Volgende opdracht &gt;</a>
+            </section>
+        </footer>   
+    </main>
+    <!-- Hieronder wordt het Javascript bestand ingeladen. Dit doe je bij voorkeur altijd aan het einde van je pagina -->
+    <script src="js/page_4.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Sprint 3 oefenopdrachten</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav class="w3-bar w3-blue">
+        <a href="index.html" class="w3-bar-item w3-button w3-mobile">Introductie</a>
+        <a href="page_2.html" class="w3-bar-item w3-button w3-mobile">Page 2</a>
+        <a href="page_3.html" class="w3-bar-item w3-button w3-mobile">Page 3</a>
+        <a href="page_4.html" class="w3-bar-item w3-button w3-mobile">Page 4</a>
+    </nav>
+    <header class="w3-container">
+        <h1>Arrays</h1>
+        <p class="normal-text">
+            Net als in C# heb je ook Arrays in JavaScript. JS is echter een minder strict dan C#. Hierdoor kan je
+            in een Array wel verschillende datatype stoppen. Let wel, dit is niet altijd handig als je bijvoorbeeld
+            een rekensom wilt maken. 
+        </p>
+        <p class="normal-text">
+            Lees de paragrafen 5.4 en 5.5 nogmaals van PART 1 van de JS info website.
+        </p>
+    </header>
+    <main class="w3-container">
+        <h3>Opdracht 1</h3>
+        <p class="normal-text">
+            In het onderstaande overzicht kunnen maximaal 4 spelers zich opgeven voor een spel. 
+            <ul>
+                <li>Toon alle namen in een Alert</li>
+                <li>Er moeten minimaal 2 namen ingevuld worden, de derde en vierde mogen maar zijn niet verplicht</li>
+                <li>Toon het aantal spelers op de juiste plaats</li>
+                <ul>
+                    <li><strong>Advanced</strong></li>
+                    <li>Toon de namen van de spelers in de console log</li>
+                    <li>Als er 2 spelers zijn verander de kleur van de panel naar w3-blue</li>
+                    <li>Als er 3 spelers zijn verander de kleur van de panel naar w3-teal</li>
+                    <li>Als er 4 spelers zijn verander de kleur van de panel naar w3-yellow</li>
+                </ul>
+                <ul>
+                    <li><strong>Expert</strong></li>
+                    <li>Maak een nieuwe button "annuleer"</li>
+                    <li>Als er op deze button geklikt wordt, leeg je alle velden en reset je de panel kleur</li>
+                    <li>Als er een tweede keer op de "Controleer" button geklikt wordt, haal je alle onnodige classnames weg</li>
+                </ul>
+            </ul>
+        </p>
+        <p class="normal-text">
+            <label>Naam speler 1</label>
+            <input class="w3-input" type="text">
+            <label>Naam speler 2</label>
+            <input class="w3-input" type="text">
+            <label>Naam speler 3</label>
+            <input class="w3-input" type="text">
+            <label>Naam speler 4</label>
+            <input class="w3-input" type="text">
+        </p>
+        <p>
+            <button class="w3-btn w3-padding w3-teal checkButton">Controleer</button>
+        </p>
+        <p class="w3-panel w3-padding w3-dark-grey">
+            We starten met: <span class="numberOfPlayers">0</span> spelers.
+        </p>
+    </main>
+    <footer class="footer" id="final">
+        <section>
+            <a href="page_2.html">&lt; Vorige opdracht</a> 
+            ||
+            <a href="page_4.html">Volgende opdracht &gt;</a>
+        </section>
+    </footer>   
+    <!-- Hieronder wordt het Javascript bestand ingeladen. Dit doe je bij voorkeur altijd aan het einde van je pagina -->
+    <script src="js/page_3.js"></script>
+</body>
+</html>

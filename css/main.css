@@ -1,0 +1,21 @@
+/* Starting the real (class based) CSS/ styling */
+
+.normal-text {
+    max-width: 650px;
+}
+
+.footer {
+    margin: 50px 0;
+}
+
+.not-allowed {
+    cursor: not-allowed;
+}
+
+.not-allowed:hover {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
